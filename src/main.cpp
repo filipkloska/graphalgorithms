@@ -110,9 +110,9 @@ float density_array[] = {0.25, 0.5, 0.75, 1};
     srand(time(NULL));
     timegraph.open("czastrwaniaSP.txt");
     for(int nVerters : nVerters_array){
-        timegraph << "rozmiar skurwysyna: " << nVerters << std::endl;
+        timegraph << "rozmiar: " << nVerters << std::endl;
         for(float density : density_array){
-            timegraph << "dense motherfucker: " << density << std::endl;
+            timegraph << "density: " << density << std::endl;
             for(int i = 0; i < 10; ++i){
                 ograph.open("losowygrafSP.txt");
                 createRandomGraph(ograph, nVerters, density);
